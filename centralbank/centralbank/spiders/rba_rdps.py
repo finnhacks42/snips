@@ -16,7 +16,7 @@ class RbaRdpsSpider(CrawlSpider):
         Rule(
             LinkExtractor(allow=(r'\/publications\/rdp\/\d{4}\/(\w+|-)+')),
             callback='parse_item', 
-            follow=True
+            follow=False
         ),
     )
 
